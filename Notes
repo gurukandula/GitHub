@@ -1,0 +1,43 @@
+1. HTML and JSP for the Login Form
+login.jsp
+
+2. Home Page JSP
+Create a new JSP file that will serve as the home page after a successful login.
+
+home.jsp
+
+3. Servlet for Handling Login and Logout
+    LoginServlet.java
+
+
+    LogoutServlet.java
+    Create a new servlet to handle logout.
+
+4. Configuring Web.xml
+web.xml
+
+5. Running the Application
+Deploy the web application to your Apache Tomcat server.
+Navigate to login.jsp in your web browser (e.g., http://localhost:8080/your_project/login.jsp).
+Explanation
+Session Management:
+When a user logs in successfully, a session is created, and the username is stored in the session.
+The home page (home.jsp) retrieves and displays the username from the session.
+The logout functionality invalidates the session, effectively logging the user out and redirecting them to the login page.
+This setup adds session handling to your JSP and servlet-based login system with Amazon DynamoDB as the backend
+
+
+1. Setting Up the Project
+Assuming you have a Java web project set up with a server like Apache Tomcat, follow these steps:
+
+2. Setting Up Amazon DynamoDB
+Create a DynamoDB Table:
+
+Table Name: users
+Primary Key: username (String)
+Insert a Sample User:
+
+username: user1
+password: pass1
+
+
